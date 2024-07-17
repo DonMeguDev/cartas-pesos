@@ -47,7 +47,7 @@ botonMasFran.addEventListener('click', () => {
 botonAgregarNico.addEventListener('click', () => {
     if(dolaresNico.value > 0){
         dNico = dNico + parseFloat(dolaresNico.value);
-        totalNico.innerHTML = '$' + formatoPesos(dNico.toFixed(2)) + ' CLP';
+        totalNico.innerHTML = '$' + formatoPesos(dNico.toFixed(2));
     }
     dolaresNico.value = '';
 });
@@ -55,7 +55,7 @@ botonAgregarNico.addEventListener('click', () => {
 botonAgregarFran.addEventListener('click', () => {
     if(dolaresFran.value > 0){
         dFran = dFran + parseFloat(dolaresFran.value);
-        totalFran.innerHTML = '$' + formatoPesos(dFran.toFixed(2)) + ' CLP';
+        totalFran.innerHTML = '$' + formatoPesos(dFran.toFixed(2));
     }
     dolaresFran.value = '';
 });
